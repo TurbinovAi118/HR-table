@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import { Form } from './FormComponent'
 
 
+
 class LoginPage extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            staff_types: [
+
+            ]
+        }
 
     }
 

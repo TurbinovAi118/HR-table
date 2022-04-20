@@ -97,3 +97,8 @@ input[disabled] {
   text-align: center;
   color: white;
 }
+
+.has-error .form-control{
+  border-color: #ff0400;
+
+}

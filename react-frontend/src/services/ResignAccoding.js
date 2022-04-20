@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const RESIGNREASONS_API_BASE_URL = "http://localhost:8011/api/resign_reasons";
+const RESIGNREASONS_API_BASE_URL = "http://localhost:8080/api/resign_reasons";
 
-class ResignReasonService {
+class ResignAccrodingService {
 
     findAllReasons(){
         return axios.get(RESIGNREASONS_API_BASE_URL);
@@ -16,8 +16,8 @@ class ResignReasonService {
         return axios.get(RESIGNREASONS_API_BASE_URL + '/' + id_reason);
     }
 
-    updateReason(resignReasons, id_reason){
-        return axios.put(RESIGNREASONS_API_BASE_URL + '/' + id_reason, resignReasons);
+    updateReason(resignReasons){
+        return axios.put(RESIGNREASONS_API_BASE_URL, resignReasons);
     }
 
     deleteResignReason(id_reason){
@@ -27,4 +27,4 @@ class ResignReasonService {
 
 
 
-export default new ResignReasonService()
+export default new ResignAccrodingService()
